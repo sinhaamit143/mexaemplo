@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<script type="text/javascript" src="js/maxheight.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +15,7 @@
     <meta name="keywords" content="Mexaemplo">
     <meta name="author" content="Mexaemplo">
     <link rel="icon" href="web_assets/image/MAXIMUM EMPLOYMENT GENERATE.png" type="image/x-icon">
-    <title>MEXAEMPLO - Login Form</title>
+    <title>Mexaemplo - Registration Form</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="log_reg_assets/css/bootstrap.min.css">
     <!-- Fontawesome CSS -->
@@ -19,7 +24,23 @@
     <link rel="stylesheet" href="log_reg_assets/font/flaticon.css">
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+
+    <!-- External CSS libraries -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
     <link rel="stylesheet" href="web_assets/css/login.css">
+
+    <style>
+        .fxt-template-layout8 .checkbox input[type="checkbox"] {
+            display: block;
+        }
+    </style>
 
 </head>
 
@@ -292,27 +313,67 @@
             <div class="content">
                 <h2>Sign In</h2>
                 <div class="form">
+
                     <div class="inputBox">
                         <input type="text" required>
-                        <i>Username</i>
+                        <i>Sponser ID*</i>
                     </div>
+
+                    <div class="fxt-transformY-50 fxt-transition-delay-1">
+                        <label id="lblName" class="form-control">Click...</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" required>
+                        <i>Full Name*</i>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="fxt-transformY-50 fxt-transition-delay-2">
+                            <label for="">Position</label>
+                            <select id="position" class="form-control" name="position" required>
+                                <option value="">Select Position</option>
+                                <option value="left" style="background:#fffffff2">Left</option>
+                                <option value="right" style="background:#fffffff2">Right</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" required>
+                        <i>Email Id*</i>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" required>
+                        <i>Mobile No.*</i>
+                    </div>
+
                     <div class="inputBox">
                         <input type="password" required>
                         <i>Password</i>
                     </div>
+
+                    <div class="inputBox">
+                        <input type="password" required>
+                        <i>Confirm Password</i>
+                    </div>
+
                     <div class="checkbox">
                         <input class="form-check-input" type="checkbox" id="rememberme">
                         <label class="form-check-label" for="rememberme" style="color: white;">
-                            Remember me
+                            I agree with Term & Conditions.
                         </label>
                     </div>
+
                     <div class="links">
-                        <a href="forget.html">Forgot Password</a>
-                        <a href="register.html">Signup</a>
+                        <a href="login.html">Already a member? Login</a>
                     </div>
+
                     <div class="inputBox">
-                        <input type="submit" value="Login">
+                        <input type="submit" value="Register">
                     </div>
+
                 </div>
             </div>
         </div>
